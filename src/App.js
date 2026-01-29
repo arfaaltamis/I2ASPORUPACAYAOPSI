@@ -331,12 +331,12 @@ export default function App() {
 
   /* -------- Data makro (Sept 2025) -------- */
   const macro = {
-    IHSG: 8080.75,
-    hargaDolar: 16656,
-    inflasiTahunan: 2.65, // %
+    IHSG: 7789.94,
+    hargaDolar: 16791.15,
+    inflasiTahunan: 2.92, // %
     biRate: 4.75, // %
-    hargaEmas: 2142000, // Rp/gram (ilustratif)
-    trxHarianBEI: 25_020_000_000_000, // Rp
+    hargaEmas: 3293000, // Rp/gram (Januari 2026)
+    trxHarianBEI: 45_502_425_930_931, // Rp
     sumber: [
       "BI (BI-Rate & inflasi)",
       "OJK/IDX (IHSG & statistik investor)",
@@ -369,7 +369,7 @@ export default function App() {
       ],
       tips: "Mulai dari indeks/blue chip; hindari FOMO; pakai DCA.",
       contoh:
-        "Indeks Harga Saham Gabungan (IHSG) menguat ke 8.080,75 poin, naik sekitar 1,06% dibanding penutupan sebelumnya.",
+        "Indeks Harga Saham Gabungan (IHSG) melemah ke 7839,75 poin, turun sekitar 5%/hari dibanding penutupan sebelumnya.",
     },
     obligasi: {
       icon: "💵",
@@ -387,7 +387,7 @@ export default function App() {
       minus: ["Harga sensitif terhadap kenaikan suku bunga"],
       tips: "SBN ritel (ORI/SBR) cocok pemula, pahami tenor & kupon.",
       contoh:
-        "Yield obligasi pemerintah tenor 10 tahun Indonesia sekitar 6,75% per tahun.",
+        "Yield obligasi pemerintah tenor 10 tahun Indonesia sekitar 7,85% per tahun.",
     },
     deposito: {
       icon: "🏦",
@@ -424,7 +424,7 @@ export default function App() {
       minus: ["Bisa sideways lama; spread beli-jual"],
       tips: "Porsi 10–20% portofolio; beli berkala; simpan bersertifikat.",
       contoh:
-        "Informasi harga emas hari ini (per gram) di Indonesia: Rp 2.142.000/gram (Emas batangan Logam Mulia – Antam)",
+        "Informasi harga emas hari ini (per gram) di Indonesia: Rp 3.293.000/gram (Emas batangan Logam Mulia – Antam)",
     },
     reksadana: {
       icon: "📊",
@@ -442,7 +442,7 @@ export default function App() {
       minus: ["Ada biaya; tergantung kinerja MI"],
       tips: "Pilih indeks/biaya rendah untuk jangka panjang.",
       contoh:
-        "Nilai Aktiva Bersih (NAB) rata-rata reksa dana pasar uang di Indonesia per 23 September 2025 tercatat sekitar Rp 1.450 – 1.600 per unit (tergantung produk dan manajer investasi).",
+        "Nilai Aktiva Bersih (NAB) rata-rata reksa dana pasar uang di Indonesia per 28 Januari 2026 tercatat sekitar Rp 1.000 – 3.000+ per unit (tergantung produk dan manajer investasi).",
     },
   };
 
@@ -674,7 +674,7 @@ export default function App() {
   const [pdb, setPdb] = useState(20000); // PDB Indonesia (triliun rupiah) → contoh 20.000 (BPS 2025)
   const [porsiProduktif, setPorsiProduktif] = useState(0.7); // porsi dana masuk sektor produktif (default 70%)
   const k = 0.05; // koefisien sensitivitas (edukatif)
-  const inflasiAwal = 2.65; // inflasi tahunan (%) → asumsi BPS 2025
+  const inflasiAwal = 2.92; // inflasi tahunan (%) → asumsi BPS 2025
 
   // ----- Hitung total dana investasi user -----
   // Ambil nilai modal dan jumlah investor yang sudah ada di aplikasi
@@ -2493,8 +2493,9 @@ export default function App() {
         }}
       >
         RUPACAYA © 2025 • Olimpiade Penelitian Siswa Indonesia (OPSI 2025) oleh
-        Arfa Altamis Darutomo dan Hanif Aulia Ramadhan
+        Arfa, Hanif, Yudist, Krista, Eshan, Aiesha © RUPACAYA Team 
       </p>
     </Wrap>
   );
 }
+
